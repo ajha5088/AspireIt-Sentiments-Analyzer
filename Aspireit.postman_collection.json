@@ -1,0 +1,698 @@
+{
+	"info": {
+		"_postman_id": "91b588ec-032b-4378-815b-69fcc3ef4a89",
+		"name": "Aspireit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16933865"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"1929070@kiit.ac.in\",\n    \"password\" : \"Hello@123\",\n    \"confirmPassword\" : \"Hello@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.233.215.19:3000/auth/v1/register",
+							"protocol": "http",
+							"host": [
+								"13",
+								"233",
+								"215",
+								"19"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"v1",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\" : \"ajha5088@gmail.com\",\n    \"password\" : \"Hello@123\",\n    \"confirmPassword\" : \"Hello@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/v1/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"v1",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET,PUT,POST,DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "token,X-Requested-With,content-type,authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "174"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ae-kYW7fxfarezM5s41kkbcJ3MDW7c\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 May 2024 19:35:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"userId\": \"a103565f-23c3-4f49-8352-a2d9f905b4a4\",\n        \"email\": \"ajha5088@gmail.com\",\n        \"createdAt\": \"2024-05-16T19:35:34.779Z\",\n        \"_id\": \"664660134fc6ca1c3cfe3e87\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"1929070@kiit.ac.in\",\n    \"password\" : \"Hello@123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.233.215.19:3000/auth/v1/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"233",
+								"215",
+								"19"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\" : \"ajha5088@gmail.com\",\n    \"password\" : \"Hello@123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/auth/v1/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"auth",
+										"v1",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET,PUT,POST,DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "token,X-Requested-With,content-type,authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "543"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21f-0VdUVUS3DBVM6R2RavD3ApaKVDI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 May 2024 14:29:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"email\": \"ajha5088@gmail.com\",\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJlbWFpbCI6ImFqaGE1MDg4QGdtYWlsLmNvbSIsImlhdCI6MTcxNTk1NjE4OSwiZXhwIjoxNzE2MDQyNTg5fQ.ZhnE9lK3LwVc_a-CFYGUSEJAyxw3O7aVuikWcfLFAeY\",\n        \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzE1OTU2MTg5LCJleHAiOjE3MTY4MjAxODl9.2RkFhBpkdpx72TiMMNgDSC_TMXN-iMbRnSyPa9gV4wQ\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Sentiments",
+			"item": [
+				{
+					"name": "analyze_sentiment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NmRkMzBmZS1jY2FjLTQyMDYtYTYxOS00MmU2MGY4NDRmZTgiLCJlbWFpbCI6IjE5MjkwNzBAa2lpdC5hYy5pbiIsImlhdCI6MTcxNjExNjk1MCwiZXhwIjoxNzE2MjAzMzUwfQ.2DyRz4SlQxkQcaHazxhNdoIemiLBYv1lnSz8P_soLGY",
+								"uuid": "f026337c-c540-4271-99d6-3033badd865c"
+							},
+							{
+								"key": "refresh_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NmRkMzBmZS1jY2FjLTQyMDYtYTYxOS00MmU2MGY4NDRmZTgiLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzE2MTE2OTUwLCJleHAiOjE3MTY5ODA5NTB9.QA1C7kG2VyTJtat84jBtaC3XffKyNdGaF-W4YvNV3NU",
+								"uuid": "85e6236e-0284-49b8-bb03-5862a0e3cdc7"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\" : \"I love you\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.233.215.19:3000/sentiment/v1/analyze_sentiment",
+							"protocol": "http",
+							"host": [
+								"13",
+								"233",
+								"215",
+								"19"
+							],
+							"port": "3000",
+							"path": [
+								"sentiment",
+								"v1",
+								"analyze_sentiment"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "negative",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJlbWFpbCI6ImFqaGE1MDg4QGdtYWlsLmNvbSIsImlhdCI6MTcxNTk1NjE4OSwiZXhwIjoxNzE2MDQyNTg5fQ.ZhnE9lK3LwVc_a-CFYGUSEJAyxw3O7aVuikWcfLFAeY"
+									},
+									{
+										"key": "refresh_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzE1OTU2MTg5LCJleHAiOjE3MTY4MjAxODl9.2RkFhBpkdpx72TiMMNgDSC_TMXN-iMbRnSyPa9gV4wQ"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\" : \"I am really sad.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/sentiment/v1/analyze_sentiment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sentiment",
+										"v1",
+										"analyze_sentiment"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET,PUT,POST,DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "token,X-Requested-With,content-type,authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "242"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f2-N3vCV3W3Qy6uAZTwyhR+nK8gIiU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 May 2024 06:18:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"userId\": \"a103565f-23c3-4f49-8352-a2d9f905b4a4\",\n        \"text\": \"I am really sad.\",\n        \"sentiment\": \"Negative\",\n        \"analyzedAt\": \"2024-05-18T06:18:00.624Z\",\n        \"_id\": \"6648481841451128fc61ceb8\",\n        \"createdAt\": \"2024-05-18T06:18:00.625Z\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "positive",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJlbWFpbCI6ImFqaGE1MDg4QGdtYWlsLmNvbSIsImlhdCI6MTcxNTk1NjE4OSwiZXhwIjoxNzE2MDQyNTg5fQ.ZhnE9lK3LwVc_a-CFYGUSEJAyxw3O7aVuikWcfLFAeY"
+									},
+									{
+										"key": "refresh_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzE1OTU2MTg5LCJleHAiOjE3MTY4MjAxODl9.2RkFhBpkdpx72TiMMNgDSC_TMXN-iMbRnSyPa9gV4wQ"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\" : \"I am really happy.\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/sentiment/v1/analyze_sentiment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sentiment",
+										"v1",
+										"analyze_sentiment"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET,PUT,POST,DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "token,X-Requested-With,content-type,authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "244"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f4-eA89FhLEU6GDpvMXYOk5JJMRu9M\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 May 2024 06:18:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"userId\": \"a103565f-23c3-4f49-8352-a2d9f905b4a4\",\n        \"text\": \"I am really happy.\",\n        \"sentiment\": \"Positive\",\n        \"analyzedAt\": \"2024-05-18T06:18:26.075Z\",\n        \"_id\": \"6648483241451128fc61cebb\",\n        \"createdAt\": \"2024-05-18T06:18:26.075Z\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "neutral",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJlbWFpbCI6ImFqaGE1MDg4QGdtYWlsLmNvbSIsImlhdCI6MTcxNTk1NjE4OSwiZXhwIjoxNzE2MDQyNTg5fQ.ZhnE9lK3LwVc_a-CFYGUSEJAyxw3O7aVuikWcfLFAeY"
+									},
+									{
+										"key": "refresh_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzE1OTU2MTg5LCJleHAiOjE3MTY4MjAxODl9.2RkFhBpkdpx72TiMMNgDSC_TMXN-iMbRnSyPa9gV4wQ"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"text\" : \"Hey , how are you?\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/sentiment/v1/analyze_sentiment",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"sentiment",
+										"v1",
+										"analyze_sentiment"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET,PUT,POST,DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "token,X-Requested-With,content-type,authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "243"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f3-UctvWKG4XYzwODrc8vL/3Ih9GmM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 18 May 2024 06:18:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"userId\": \"a103565f-23c3-4f49-8352-a2d9f905b4a4\",\n        \"text\": \"Hey , how are you?\",\n        \"sentiment\": \"Neutral\",\n        \"analyzedAt\": \"2024-05-18T06:18:52.959Z\",\n        \"_id\": \"6648484c41451128fc61cebe\",\n        \"createdAt\": \"2024-05-18T06:18:52.960Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Uploads",
+			"item": [
+				{
+					"name": "uploadFile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJlbWFpbCI6ImFqaGE1MDg4QGdtYWlsLmNvbSIsImlhdCI6MTcxNTk1NjE4OSwiZXhwIjoxNzE2MDQyNTg5fQ.ZhnE9lK3LwVc_a-CFYGUSEJAyxw3O7aVuikWcfLFAeY",
+								"uuid": "4bceba03-11a5-4dcf-8d0e-37eaa017c516"
+							},
+							{
+								"key": "refresh_token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzE1OTU2MTg5LCJleHAiOjE3MTY4MjAxODl9.2RkFhBpkdpx72TiMMNgDSC_TMXN-iMbRnSyPa9gV4wQ",
+								"uuid": "e4cfce90-7f64-4000-8f2f-424fb6a2244b"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/adityajha/Downloads/Aditya Jha Resume_final-1.pdf"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/upload/v1/uploadFile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"upload",
+								"v1",
+								"uploadFile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "uploadFile",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "authorization",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJlbWFpbCI6ImFqaGE1MDg4QGdtYWlsLmNvbSIsImlhdCI6MTcxNTk1NjE4OSwiZXhwIjoxNzE2MDQyNTg5fQ.ZhnE9lK3LwVc_a-CFYGUSEJAyxw3O7aVuikWcfLFAeY"
+									},
+									{
+										"key": "refresh_token",
+										"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhMTAzNTY1Zi0yM2MzLTRmNDktODM1Mi1hMmQ5ZjkwNWI0YTQiLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwiaWF0IjoxNzE1OTU2MTg5LCJleHAiOjE3MTY4MjAxODl9.2RkFhBpkdpx72TiMMNgDSC_TMXN-iMbRnSyPa9gV4wQ"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/Users/adityajha/Downloads/Aditya Jha Resume_final-1.pdf"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/upload/v1/uploadFile",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"upload",
+										"v1",
+										"uploadFile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET,PUT,POST,DELETE"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "token,X-Requested-With,content-type,authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "228"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e4-q0dhzz8jRYqgBBqfxCcI7KFx0m4\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 17 May 2024 22:33:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"userId\": \"a103565f-23c3-4f49-8352-a2d9f905b4a4\",\n        \"filename\": \"Aditya Jha Resume_final-1.pdf\",\n        \"contentType\": \"application/pdf\",\n        \"_id\": \"6647db3c6bd7700f02793a82\",\n        \"createdAt\": \"2024-05-17T22:33:32.125Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
